@@ -12,7 +12,7 @@ async function start() {
   const generateConfig = require('./generateConfig')
   await generateConfig()
   require('./server').serveNcmApi({
-    checkVersion: true,
+    checkVersion: false,
   })
 }
 start()
